@@ -2,6 +2,7 @@ let express = require('express')
 
 let fs = require('fs')
 
+let port =5000;
 //let jsonServer = require('json-server')
 
 let bodyparser = require('body-parser')
@@ -70,5 +71,5 @@ app.post('/editUser/:id',(req,res) => {
 })
 
 app.listen(5000,() => {
-    console.log("App is listening on port 5000")
+    console.log(`app running at http://localhost:${port}`)
 })
